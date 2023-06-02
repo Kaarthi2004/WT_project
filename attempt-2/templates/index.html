@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Review Site</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel = "icon" href = 
+"data:image/jpeg;base64,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" 
+        type = "image/x-icon">
+    <style>
+        .jumbotron{
+            background-color: #FFE7A0;
+        }
+        body {
+            background-color: #344042;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: xx-large;
+            font-style:initial;
+            text-decoration:underline;
+            padding: 20px;
+            background-color: #32a1c6;
+            color: rgb(250, 234, 214);
+        }
+        
+        form {
+            text-align: center;
+            margin: 20px auto;
+            color:#30A2FF;
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        input[type="text"] {
+            padding: 10px;
+        }
+        
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color:#113655;
+            color: white;
+            border:#12465e;
+            cursor: pointer;
+        }
+        
+        #result {
+            margin: 20px auto;
+            width: 80%;
+            color:#30A2FF;
+            text-align: center;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(47, 82, 83, 0.926);
+            background: linear-gradient(to bottom, #1e7bc8, #1c96bb);
+            
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: left;
+            color: #141414;
+            border-bottom: 1px solid #123858;
+        }
+        
+        th {
+            background-color: #0c3455;
+            color: white;
+        }
+        
+        footer {
+            text-align: center;
+            background-color: #0c2c46;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#searchForm").submit(function(event) {
+                event.preventDefault();
+                var movieName = $("#idNumber").val();
+                $.ajax({
+                    url: "/search",
+                    type: "POST",
+                    data: {movieName: movieName},
+                    success: function(response) {
+                        if (response) {
+                            $("#result").html(response);
+                        } else {
+                            $("#result").html("Movie not found. Note:Please enter first letter in caps or try some other movie");
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="jumbo" class="jumbotron text-align:center border" style="width: fit-content;">
+        <h1 style="text-transform: uppercase; font-stretch:ultra-expanded;">RK - Movie review Site</h1>      
+        <p style="font-family: 'Times New Roman', Times, serif; font-style: italic;">"Embark on a Cinematic Odyssey, Where Every Frame Tells a Story. Immerse Yourself in a World of Spellbinding Narratives, Captivating Performances, and Breathtaking Visuals. Unleash Your Passion for Movies and Uncover the Enchanting Power of the Silver Screen."</p>
+    </div>
+
+    <form id="searchForm">
+        <label  for="idNumber">Enter the Movie Name (Eg: Vikram):</label>
+        <input type="text"  id="idNumber" name="idNumber">
+        <button  type="submit">Search</button>
+    </form>
+    <div id="result"></div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div style="width: 100%; display: table;">
+        <div style="display: table-row; height: 100px;">
+            <div style="width: 50%; display: table-cell; background: #FFE7A0;">
+                <img  width="900" height="400" src="https://img1.hotstarext.com/image/upload/f_auto,t_hcdl/sources/r1/cms/prod/6237/1296237-h-5662015305e4" alt="Girl in a jacket">
+            </div>
+            <div style="display: table-cell; background: #FFE7A0;"> 
+                <img  width="650" height="400" src="https://e0.pxfuel.com/wallpapers/722/872/desktop-wallpaper-mersal-movie-poster-first-look-on-coming.jpg" alt="Girl in a jacket">
+            </div>
+        </div>
+    </div>
+    <div style="width: 100%; display: table;">
+        <div style="display: table-row; height: 100px;">
+            <div style="width: 50%; display: table-cell; background: #FFE7A0;">
+                <img  class="img-responsive" width="800" height="400" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202210/ponniyin-selvan-940.jpg?VersionId=KRuF6x2BERvtD_KVeL4isejbfYWr0C_Y" alt="Girl in a jacket">
+            </div>
+            <div style="display: table-cell; background: #FFE7A0;"> 
+                <img  class="img-responsive" width="800" height="400" src="https://i.ytimg.com/vi/x6oUuu6vA7w/maxresdefault.jpg" alt="Girl in a jacket">
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <footer>
+        Developed by Ranga Kaarthi (B.E); 2023
+    </footer>
+</body>
+</html>
